@@ -1,11 +1,11 @@
 # PHBS_MLF_2018
-satellite_image_recognition
+# satellite_image_recognition
 
-Group members:
-# Giacomo Galanti 1802010267
-# Giovanni Ostuni 1802010237
-# Matteo Rossi Tantini 1802010274
-# Jian Zhou 1801212818
+# Group members:
+Giacomo Galanti 1802010267
+Giovanni Ostuni 1802010237
+Matteo Rossi Tantini 1802010274
+Jian Zhou 1801212818
 
 # Motivation:
  
