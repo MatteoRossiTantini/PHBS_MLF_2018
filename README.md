@@ -2,11 +2,11 @@
 # Satellite_Image_Recognition
 
 # Group members:
-Giacomo Galanti  (1802010267)
+Giacomo Galanti  (1802010267) giacomogalanti
 
-Giovanni Ostuni  (1802010237)
+Giovanni Ostuni  (1802010237) giovanniostuni
 
-Matteo Rossi Tantini  (1802010274)
+Matteo Rossi Tantini  (1802010274) MatteoRossiTantini
 
 Jian Zhou  (1801212818) zhoujianberkeley
 
