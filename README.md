@@ -5,9 +5,9 @@
 Name|Student id|Github contact
 -----|---------|--------------
 Giacomo Galanti|1802010267|[giacomogalanti](https://github.com/giacomogalanti)
-Giovanni Ostuni|1802010237|@giovanniostuni
-Matteo Rossi Tantini|1802010274|@MatteoRossiTantini
-Jian Zhou|1801212818|@zhoujianberkeley
+Giovanni Ostuni|1802010237|[giovanniostuni](https://github.com/giovanniostuni)
+Matteo Rossi Tantini|1802010274|[MatteoRossiTantini](https://github.com/MatteoRossiTantini)
+Jian Zhou|1801212818|[zhoujianberkeley](https://github.com/zhoujianberkeley)
 
 # Motivation:
  
