@@ -2,13 +2,12 @@
 # Satellite_Image_Recognition
 
 # Group members:
-Giacomo Galanti  (1802010267) giacomogalanti
-
-Giovanni Ostuni  (1802010237) giovanniostuni
-
-Matteo Rossi Tantini  (1802010274) MatteoRossiTantini
-
-Jian Zhou  (1801212818) zhoujianberkeley
+Name|Student id|Github contact
+-----|---------|--------------
+Giacomo Galanti|1802010267|giacomogalanti
+Giovanni Ostuni|1802010237|giovanniostuni
+Matteo Rossi Tantini|1802010274!MatteoRossiTantini
+Jian Zhou|1801212818|zhoujianberkeley
 
 # Motivation:
  
