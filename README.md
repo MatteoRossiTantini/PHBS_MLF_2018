@@ -8,7 +8,7 @@ Giovanni Ostuni  (1802010237)
 
 Matteo Rossi Tantini  (1802010274)
 
-Jian Zhou  (1801212818)
+Jian Zhou  (1801212818) zhoujianberkeley
 
 # Motivation:
  
