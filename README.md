@@ -2,13 +2,13 @@
 # Satellite_Image_Recognition
 
 # Group members:
-Giacomo Galanti id:1802010267
+Giacomo Galanti  (1802010267)
 
-Giovanni Ostuni id:1802010237
+Giovanni Ostuni  (1802010237)
 
-Matteo Rossi Tantini id:1802010274
+Matteo Rossi Tantini  (1802010274)
 
-Jian Zhou id:1801212818
+Jian Zhou  (1801212818)
 
 # Motivation:
  
