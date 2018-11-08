@@ -39,7 +39,7 @@ The .JSON file contains a list of three digit number between (0, 256) since any 
 
 Then we modified the pixel scale, dividing it by 255, to obtain it in a range [0,1]
 
-* Benchmarking the CNN with logistic classifier and decision tree
+# Benchmarking the CNN with logistic classifier and decision tree
   * Compare Multiple Classifiers:
   
   * K-Fold Cross-Validation Accuracy:
@@ -48,7 +48,7 @@ Then we modified the pixel scale, dividing it by 255, to obtain it in a range [0
   * DTC: 0.898438 (0.018606)
 
 
-* CNN
+# CNN
    * Convolutional and pooling layers 1 and 2
      From the input layer (4000x80x80x3 (batch_size, height, width, channels)we extract 32 5x5 filters (#convolutional layer1)     which shrink to a 2x2 size with #pooling layer 1. From here we connect a second convolutional exctractin 64 5x5 filters (#convolutional layer 2) and then we apply another 2x2 pooling layer.
 
@@ -58,7 +58,7 @@ Then we modified the pixel scale, dividing it by 255, to obtain it in a range [0
    * logit layer
      The logit layer is the final layer with an outpout (0,1).
 
-# training and evalutation
+# Training and evalutation
 We calculate a loss function valid for both train and eval sets
 We calculate the optimaser for the training (gradient descent learning_rate=0.001)
 And define accuracy as a metric on the evaluation set.
@@ -71,6 +71,6 @@ So, we obtained 3 intermediate results:
    <img width="476" alt="screenshot 2018-11-08 at 23 37 52" src="https://user-images.githubusercontent.com/42959419/48211859-5d60a280-e3b5-11e8-81bf-73dd0e485abb.png">
    <img width="621" alt="screenshot 2018-11-08 at 23 38 02" src="https://user-images.githubusercontent.com/42959419/48211872-694c6480-e3b5-11e8-944d-4cbfa5592d9a.png">
       
-## model final result:
+## Model final result:
    <img width="832" alt="screenshot 2018-11-08 at 23 38 35" src="https://user-images.githubusercontent.com/42959419/48211914-7d906180-e3b5-11e8-90f8-64473a76a724.png">
 
