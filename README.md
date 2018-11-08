@@ -67,10 +67,10 @@ Given the time used we set logging hooks every 50 iterations on a total of 200 s
 train our model on subsets of 100 samples shuffled).
 So, we obtained 3 intermediate results:
 
-   <img width="479" alt="screenshot 2018-11-08 at 23 37 41" src="https://user-images.githubusercontent.com/42959419/48211827-4ae66900-e3b5-11e8-9018-4be7e9b96fb2.png">
-   <img width="476" alt="screenshot 2018-11-08 at 23 37 52" src="https://user-images.githubusercontent.com/42959419/48211859-5d60a280-e3b5-11e8-81bf-73dd0e485abb.png">
-   <img width="621" alt="screenshot 2018-11-08 at 23 38 02" src="https://user-images.githubusercontent.com/42959419/48211872-694c6480-e3b5-11e8-944d-4cbfa5592d9a.png">
+   * <img width="479" alt="screenshot 2018-11-08 at 23 37 41" src="https://user-images.githubusercontent.com/42959419/48211827-4ae66900-e3b5-11e8-9018-4be7e9b96fb2.png">
+   * <img width="476" alt="screenshot 2018-11-08 at 23 37 52" src="https://user-images.githubusercontent.com/42959419/48211859-5d60a280-e3b5-11e8-81bf-73dd0e485abb.png">
+   * <img width="621" alt="screenshot 2018-11-08 at 23 38 02" src="https://user-images.githubusercontent.com/42959419/48211872-694c6480-e3b5-11e8-944d-4cbfa5592d9a.png">
       
 ## Model final result:
-   <img width="832" alt="screenshot 2018-11-08 at 23 38 35" src="https://user-images.githubusercontent.com/42959419/48211914-7d906180-e3b5-11e8-90f8-64473a76a724.png">
+   *  <img width="832" alt="screenshot 2018-11-08 at 23 38 35" src="https://user-images.githubusercontent.com/42959419/48211914-7d906180-e3b5-11e8-90f8-64473a76a724.png">
 
