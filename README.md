@@ -27,6 +27,11 @@ The .JSON file contains a list of three digit number between (0, 256) since any 
 
 #reshape data:
 
+<img width="465" alt="screenshot 2018-11-09 at 00 29 41" src="https://user-images.githubusercontent.com/42959419/48212480-a402cc80-e3b6-11e8-90c1-731bb59d5993.png">
+
+<img width="468" alt="screenshot 2018-11-09 at 00 29 50" src="https://user-images.githubusercontent.com/42959419/48212523-bc72e700-e3b6-11e8-96fb-c7f7e2070c27.png">
+
+
 #plot of RGB intensities:
 
 <img width="620" alt="screenshot 2018-11-08 at 20 22 27" src="https://user-images.githubusercontent.com/42959419/48211750-212d4200-e3b5-11e8-92b3-343c7d476dba.png">
@@ -61,6 +66,7 @@ And define accuracy as a metric on the evaluation set.
 Given the time used we set logging hooks every 50 iterations on a total of 200 steps. Morover we set batch_size=100 (we
 train our model on subsets of 100 samples shuffled).
 So, we obtained 3 intermediate results:
+
    <img width="479" alt="screenshot 2018-11-08 at 23 37 41" src="https://user-images.githubusercontent.com/42959419/48211827-4ae66900-e3b5-11e8-9018-4be7e9b96fb2.png">
    <img width="476" alt="screenshot 2018-11-08 at 23 37 52" src="https://user-images.githubusercontent.com/42959419/48211859-5d60a280-e3b5-11e8-81bf-73dd0e485abb.png">
    <img width="621" alt="screenshot 2018-11-08 at 23 38 02" src="https://user-images.githubusercontent.com/42959419/48211872-694c6480-e3b5-11e8-944d-4cbfa5592d9a.png">
