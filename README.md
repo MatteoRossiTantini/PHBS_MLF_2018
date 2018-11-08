@@ -53,7 +53,7 @@ Then we modified the pixel scale, dividing it by 255, to obtain it in a range [0
      From the input layer (4000x80x80x3 (batch_size, height, width, channels)we extract 32 5x5 filters (#convolutional layer1)     which shrink to a 2x2 size with #pooling layer 1. From here we connect a second convolutional exctractin 64 5x5 filters (#convolutional layer 2) and then we apply another 2x2 pooling layer.
 
    * dense layer
-     Having applied 2 pooling layers, the picture size (80x80) is reduced twice by 50% (20x20). Before applying the dense layer, we flatten our pool2 into 2 dimensions (-1, 20*20*64).So now we can add a dense layer to perform classification on the features extracted by the convolution/pooling layers.We apply dropout  regolariztion to improve the results (rate=0.4 means that 40%of the elements will be dropped out during training).
+     Having applied 2 pooling layers, the picture size (80x80) is reduced twice by 50% (20x20). Before applying the dense layer, we flatten our pool2 into 2 dimensions (-1, 20x20x64).So now we can add a dense layer to perform classification on the features extracted by the convolution/pooling layers.We apply dropout  regolariztion to improve the results (rate=0.4 means that 40%of the elements will be dropped out during training).
 
    * logit layer
      The logit layer is the final layer with an outpout (0,1).
