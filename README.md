@@ -18,3 +18,6 @@ Image recognition is a disruptive technology with many applications from self-dr
 The dataset from [Kaggle](https://www.kaggle.com/rhammell/ships-in-satellite-imagery/home) contains 4000 pictures available both as PNG files and in .JSON format. 1000 pictures are classified as “ships” (1) and the other 3000 as “non-ships” (0). These include also partial parts of real ships (ex. Is missing the back part), which opens on how to set the threshold of the classifier.
 
 The .JSON file contains a list of three digit number between (0, 256) since any picture is stores as a 19,200 list of integers. As said before, every picture has 80x80=6400 pixels, to each of one three (0, 256) numbers are associated which indicate the intensity for RED, GREEN and BLUE of every pixel.
+
+# Methodology:
+#data analysis: 
