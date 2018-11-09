@@ -57,13 +57,13 @@ Then we modified the pixel scale, dividing it by 255, to obtain it in a range [0
      * Having applied 2 pooling layers, the picture size (80x80) is reduced twice by 50% (20x20). 
      * Before applying the dense layer, we flatten our pool2 into 2 dimensions (-1, 20x20x64).
      * So now we can add a dense layer to perform classification on the features extracted by the convolution/pooling layers.
-     * We apply dropout regolariztion to improve the results (rate=0.4 means that 40%of the elements will be dropped out during training).
+     * We apply dropout regolarization to improve the results (rate=0.4 means that 40%of the elements will be dropped out during training).
 
    * logit layer
      * The logit layer is the final layer with an outpout (0,1).
 
 # Training and evalutation
-We calculate a loss function valid for both train and eval sets
+We calculate a loss function valid for both train and evaluation sets
 We calculate the optimaser for the training (gradient descent learning_rate=0.001)
 And define accuracy as a metric on the evaluation set.
    
