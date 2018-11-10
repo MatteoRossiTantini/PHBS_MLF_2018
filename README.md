@@ -9,13 +9,15 @@ Giovanni Ostuni|1802010237|[giovanniostuni](https://github.com/giovanniostuni)
 Matteo Rossi Tantini|1802010274|[MatteoRossiTantini](https://github.com/MatteoRossiTantini)
 Jian Zhou|1801212818|[zhoujianberkeley](https://github.com/zhoujianberkeley)
 
+the project has been developed equally by each member of the group.
+
 # Motivation:
  
 Image recognition is a disruptive technology with many applications from self-driving cars to national security. This specific project could be used for logistic, monitoring port activities and defense purposes.
  
 # Data description:
 
-The dataset from [Kaggle](https://www.kaggle.com/rhammell/ships-in-satellite-imagery/home) contains 4000 pictures available both as PNG files and in .JSON format. 1000 pictures are classified as “ships” (1) and the other 3000 as “non-ships” (0). These include also partial parts of real ships (ex. Is missing the back part), which opens on how to set the threshold of the classifier.
+The dataset from [Kaggle](https://www.kaggle.com/rhammell/ships-in-satellite-imagery/home) contains 4000 pictures available both as PNG files and in .JSON format. 1000 pictures are classified as “ships” (1) and the other 3000 as “non-ships” (0). These include also partial parts of real ships (ex. Is missing the back part).
 
 The .JSON file contains a list of three digit number between (0, 256) since any picture is stores as a 19,200 list of integers. As said before, every picture has 80x80=6400 pixels, to each of one three (0, 256) numbers are associated which indicate the intensity for RED, GREEN and BLUE of every pixel.
 
@@ -47,17 +49,18 @@ Then we modified the pixel scale, dividing it by 255, to obtain it in a range [0
   * LR: 0.890938 (0.008778)
   * DTC: 0.898438 (0.018606)
 
+Even if we knew that the CNN model would be the best performer, being the task image recognition, we decided to run Logistic Regression and Decision Tree models, in order to compare their results with the CNN. Having worked directly on our PC (no GPU) we trained only these two models beacuse of computational power (took 1h). 
 
 # CNN
    * Convolutional and pooling layers 1 and 2
-     * From the input layer (4000x80x80x3 (batch_size, height, width, channels) we extract 32 5x5 filters (#convolutional layer1) which will shrink to a 2x2 size with #pooling layer 1. 
+     * From the input layer (4000x80x80x3 (batch_size, height, width, channels) we extract 32 5x5 filters (#convolutional layer1) which will shrink to a 2x2 size with #pooling layer 1 (we applied MaxPooling).
      * From here we connect a second convolutional layer exctracting 64 5x5 filters (#convolutional layer 2), then we apply another 2x2 pooling layer.
 
    * dense layer
      * Having applied 2 pooling layers, the picture size (80x80) is reduced twice by 50% (20x20). 
      * Before applying the dense layer, we flatten our pool2 into 2 dimensions (-1, 20x20x64).
      * So now we can add a dense layer to perform classification on the features extracted by the convolution/pooling layers.
-     * We apply dropout regolarization to improve the results (rate=0.4 means that 40%of the elements will be dropped out during training).
+     * We apply dropout regolarization to improve the results (rate=0.4 means that 40% of the elements will be dropped out during training).
 
    * logit layer
      * The logit layer is the final layer with an outpout (0,1).
@@ -71,13 +74,16 @@ Given the time used we set logging hooks every 50 iterations on a total of 200 s
 train our model on subsets of 100 samples shuffled).
 So, we obtained 3 intermediate results:
 
-<img width="479" alt="screenshot 2018-11-08 at 23 37 41" src="https://user-images.githubusercontent.com/42959419/48211827-4ae66900-e3b5-11e8-9018-4be7e9b96fb2.png">
-
-<img width="476" alt="screenshot 2018-11-08 at 23 37 52" src="https://user-images.githubusercontent.com/42959419/48211859-5d60a280-e3b5-11e8-81bf-73dd0e485abb.png">
-
-<img width="621" alt="screenshot 2018-11-08 at 23 38 02" src="https://user-images.githubusercontent.com/42959419/48211872-694c6480-e3b5-11e8-944d-4cbfa5592d9a.png">
+Hook at|Result|
+-----|---------
+50|<img width="479" alt="screenshot 2018-11-08 at 23 37 41" src="https://user-images.githubusercontent.com/42959419/48211827-4ae66900-e3b5-11e8-9018-4be7e9b96fb2.png">
+100|<img width="476" alt="screenshot 2018-11-08 at 23 37 52" src="https://user-images.githubusercontent.com/42959419/48211859-5d60a280-e3b5-11e8-81bf-73dd0e485abb.png">
+150|<img width="621" alt="screenshot 2018-11-08 at 23 38 02" src="https://user-images.githubusercontent.com/42959419/48211872-694c6480-e3b5-11e8-944d-4cbfa5592d9a.png">
       
 ## Model final result:
+Final Hook|Final Result|
+-----|---------
+200|<img width="832" alt="screenshot 2018-11-08 at 23 38 35" src="https://user-images.githubusercontent.com/42959419/48211914-7d906180-e3b5-11e8-90f8-64473a76a724.png">
 
-<img width="832" alt="screenshot 2018-11-08 at 23 38 35" src="https://user-images.githubusercontent.com/42959419/48211914-7d906180-e3b5-11e8-90f8-64473a76a724.png">
-
+The CNN model has an accuracy of 98%, compare to Logistic Regression and Decision Tree models, which have an accuracy below 90%.
+This confirmes our thesis that the CNN model is the best performer. 
