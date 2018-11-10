@@ -87,3 +87,11 @@ Final Hook|Final Result|
 
 The CNN model has an accuracy of 98%, compare to Logistic Regression and Decision Tree models, which have an accuracy below 90%.
 This confirmes our thesis that the CNN model is the best performer. 
+
+# Future Project Application:
+Unfortunately, our Kaggle dataset is biased. It takes as input relatively little images given that each pixel is 3m every 80x80 image is 240x240 meters on earth, with the sever risk that images of partial ships are misclassified (the front in A and the back in B, and labeled as 0). In the dataset, even if the 90% of ship is in the picture the label is 0. 
+We thought about begging the closest images together to avoid this problem, but they are not clearly ordered within the dataset. 
+This means that, in order to deliver a product able to work in reality, we have to take control of the creation of the dataset. Given that the images are available online we have to split ordinately following a grid order. 
+Starting from the assumption that our CNN fires 1 when a certain concentration and pattern of pixel/color is found:
+ * With 80x80 pixels, through the use of the coordinate feature (not used before in our project) we can take into account also the concentration of pixel/color in the next pictures. The intuition would be to expand the area of analysis beyond the border of the specific image. Unfortunately, our model (trained on the Kaggle dataset) is used to classify partial ships as 0. So, we can’t leverage it. We need to create label for pictures giving 1 to both complete ships and partial ones. In this way, we believe we could classify also those partial images as ship (label=1), with an high test accuracy on real life application.
+
